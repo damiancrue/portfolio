@@ -1,6 +1,6 @@
 import work from './mywork'
 import '../App.css';
-import React from "react";
+import {React} from "react";
 
 import { useParams } from "react-router-dom";
 

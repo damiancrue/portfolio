@@ -4,8 +4,14 @@
   font-weight: NUMERIC_WEIGHT_VALUE;
   src: url('https://fonts.googleapis.com/css2?familia =Poppins: wght @ 200; 300; 500&mostrar = swap ');
 }
+*{
+  color:aliceblue;
+  text-decoration: none;
+}
 .App {
   text-align: center;
+  background: rgb(10,97,106);
+background: linear-gradient(90deg, rgba(10,97,106,1) 0%, rgba(53,138,96,1) 41%, rgba(99,37,161,1) 98%);
 }
 
 .App-logo {
@@ -27,7 +33,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -40,7 +45,7 @@
  display: flex;
  flex-direction: column;
  align-items: center;
- width: 40%;
+ width: 50%;
 }
 .home-container-projects {
   display: flex;
@@ -48,24 +53,32 @@
   align-items: center;
  }
 .container-projects {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
 }
-.title {
-  color:#282c34;
-}
+
 .img-gral{
-  width: 50%;
+  width: 90%;
   height: 20vh;
 }
 .projects-info{
   margin: 15px;
+  size: 50%;
+  align-items: center;
   display: flex;
-  padding: 5px;
+  flex-direction: column;
+  padding: 15px;
   border-radius: 5px;
   background-color: #ffffff33;
   box-shadow: 5px 5px 5px #000;
 }
+.projects-info:hover{
+  background-color: #ffffff88;
+  box-shadow: 5px 5px 5px #fff;
+  color: #000;
+}
+
 
 @keyframes App-logo-spin {
   from {
