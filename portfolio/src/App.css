@@ -4,14 +4,33 @@
   font-weight: NUMERIC_WEIGHT_VALUE;
   src: url('https://fonts.googleapis.com/css2?familia =Poppins: wght @ 200; 300; 500&mostrar = swap ');
 }
-*{
+body{
   color:aliceblue;
-  text-decoration: none;
-}
-.App {
+  text-decoration: none;  
   text-align: center;
-  background: rgb(10,97,106);
-background: linear-gradient(90deg, rgba(10,97,106,1) 0%, rgba(53,138,96,1) 41%, rgba(99,37,161,1) 98%);
+  background: rgb(3,38,42);
+background: linear-gradient(90deg, rgba(3,38,42,1) 0%, rgba(53,138,96,1) 41%, rgba(61,5,117,1) 100%);
+}
+p{
+  color: #000000cc;
+  font-weight: 500;
+}
+*{  
+  text-decoration: none;  
+  color:aliceblue;
+}
+.header{
+  display: flex;
+}
+.header-s{
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  width: 50%;
+  height: 70px
+}
+.img-logo{
+  height: 20vh;
 }
 
 .App-logo {
@@ -26,7 +45,6 @@ background: linear-gradient(90deg, rgba(10,97,106,1) 0%, rgba(53,138,96,1) 41%, 
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -55,30 +73,61 @@ background: linear-gradient(90deg, rgba(10,97,106,1) 0%, rgba(53,138,96,1) 41%, 
 .container-projects {
   display: grid;
   grid-template-columns: 50% 50%;
-
 }
-
+.title{
+  color: #ffffffcc;
+  padding: 2px;
+  margin: 5px;
+}
 .img-gral{
   width: 90%;
   height: 20vh;
 }
 .projects-info{
-  margin: 15px;
+  margin: 0 5px 10px 15px;
   size: 50%;
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 15px;
-  border-radius: 5px;
-  background-color: #ffffff33;
-  box-shadow: 5px 5px 5px #000;
+  border-radius: 15px;
+  background-color: #ffffff55;
+  box-shadow: 3px 3px 5px #000;
 }
 .projects-info:hover{
-  background-color: #ffffff88;
-  box-shadow: 5px 5px 5px #fff;
-  color: #000;
+  background-color: #ffffff99;
+  box-shadow: 3px 3px 5px #fff;
+  color: #000000;
 }
-
+.crazzy-letters{
+  display: flex;
+  position:relative;
+  z-index: 1;
+  color: white;
+  font-weight: bolder;
+  font-size: 80px;
+  margin: 2px;
+}
+.crazzy-letters:hover{
+  position:relative;
+  z-index: 10;
+  color: red;
+  font-size: 80px;
+  font-stretch: ultra-expanded;
+  font-weight: bolder;
+  animation: App-logo-spin 2s none infinite alternate-reverse ;
+  font-stretch: extra-condensed;
+}
+.anim{
+  display: flex;
+  flex-direction: column;
+  justify-items:left;
+  padding: 30px;
+}
+.anim-word{
+  display: flex;
+  padding: 0
+}
 
 @keyframes App-logo-spin {
   from {
@@ -87,4 +136,7 @@ background: linear-gradient(90deg, rgba(10,97,106,1) 0%, rgba(53,138,96,1) 41%, 
   to {
     transform: rotate(360deg);
   }
+}
+@keyframes crazzy-letters {
+
 }

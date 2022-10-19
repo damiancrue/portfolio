@@ -1,6 +1,18 @@
+import logo from '../img/daB..png'
+
 export function Header(){
 return (
-    <h1>HEADER</h1>
+    <div className='header'>
+       <div  className='header-s'>
+    <h2>
+    DAMIAN E. AGUILERA
+    </h2>
+
+        <img className='img-logo' src={logo} alt='img logo'/>
+     </div>
+
+    </div>
+
 )
 }
 
